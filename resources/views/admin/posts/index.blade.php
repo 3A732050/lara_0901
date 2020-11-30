@@ -34,7 +34,7 @@
                         <th width="30" style="text-align: center">#</th>
                         <th>標題</th>
                         <th width="70" style="text-align: center">精選？</th>
-                        <th width="100" style="text-align: center">功能</th>
+                        <th width="110" style="text-align: center">功能</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -44,7 +44,7 @@
                         <td>{{ $post->title }}</td>
                         <td style="text-align: center">{{ ($post->is_feature)? 'v' : 'x' }}</td>
                         <td>
-                            <a href="{{ route('admin.posts.edit', $post->id) }}">編輯</a>
+                            <a class="btn btn-sm btn-primary" href="{{ route('admin.posts.edit', $post->id) }}">編輯</a>
                             /
                             <a href="#">刪除</a>
                         </td>
